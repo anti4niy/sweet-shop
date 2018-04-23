@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Alexander;
+    src: url(../fonts/Alexander.otf);
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    color: #2d2c2c;
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.section-title {
+    position: relative;
+}
+.section-title_title {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2d2c2c;
+}
+/* Custom styles */
+.header {
+    padding-top: 10px;
+}
+
+.header_contacts {
+    font-size: 20px;
+    margin-right: 65px;
+}
+
+.header_contacts a:hover{
+    cursor: pointer;
+}
+
+.header_contacts a + a {
+    margin-left: 13px;
+}
+
+.header_contacts i {
+    color: #ff6c84;
+}
+
+.header_nav {
+    position: relative;
+}
+
+.header_nav-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+
+.header_nav-menu a {
+    font-size: 18px;
+    color: #2d2c2c;
+}
+.header_nav-menu a:hover {
+    color: #ff6c84;
+}
+
+.header .phone-number {
+    margin-right: 88px;
+}
+
+.header .phone-number span {
+    margin-left: 4px;
+}
+
+.inner {
+    position: relative;
+    height: 663px;
+}
+
+.inner_slider {
+    position: absolute;
+    z-index: -1;
+}
+
+.inner_slider-pagination {
+    position: absolute;
+    bottom: 19px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 137px;
+    
+}
+
+.inner_slider-pagination .pagination-item {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(256, 256, 256, .5);
+}
+
+.inner_slider-pagination .pagination-item + .pagination-item {
+    margin-left: 19px;
+}
+
+.inner_slider-pagination .pagination-item.active {
+    background-color: rgba(256, 256, 256, 1);
+}
+
+
+
+.inner_content {
+    width: 446px;
+    height: 351px;
+    margin-top: 200px;
+    margin-bottom: 112px;
+    background-color: rgba(256, 256, 256, .75);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.inner_title h1{
+    font-family: Alexander;
+    font-size: 140px;
+    line-height: 100px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.inner_title span {
+    margin-top: -10px;
+    margin-right: 9px;
+    margin-left: 181px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 150;
+    font-size: 30px;
+    color: #ff6c84;
+}
+
+.inner_slogan {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.inner .btn-order {
+    width: 255px;
+    height: 60px;
+    background-color: #ff6c84;
+    color: #fff;
+    font-size: 30px;
+}
+
+.about-us_text .title {
+    text-align: center;
+    font-size: 18px;
+    color: #ff6c84;
+    font-weight: 500;
+}
+
+.about-us .section-title {
+    margin-bottom: 60px;
+}
