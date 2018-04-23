@@ -196,11 +196,21 @@ a:hover {
 .about-us_list li + li {
     margin-top: 15px;
 }
+
+@media (max-width: 991px) {
+    .about-us_img {
+        text-align: center;
+    }
+}
 /* About-us block end */
 
 /* Advantage start */
 .advantage .section-title {
     margin-bottom: 70px;
+}
+
+.advantage-block {
+    margin-bottom: 30px;
 }
 
 .advantage-block_title {
@@ -214,6 +224,7 @@ a:hover {
 .advantage-block_text p {
     font-weight: 500;
 }
+
 
 /* Advantage end */
 
