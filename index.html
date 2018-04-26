@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,500,500i&amp;subset=cyrillic" rel="stylesheet">
 
     <!-- font-awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- bootstrap styles-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- slicknav css -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
 
     <!-- custom styles-->
     <link rel="stylesheet" href="css/style.css">
@@ -26,16 +28,12 @@
     <section class="header mb-1">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="logo">
-                        <img src="img/header-logo.png" alt="logo">
-                    </div>
+                <div class="logo">
+                    <img src="img/header-logo.png" alt="logo">
                 </div>
                 <!-- /header-logo -->
-
-                <div class="col-9">
-                    <div class="mobile-nav"></div>
-                    <div class="header_contacts d-flex mb-2 mt-1">
+                <div class="contacts-and-menu">
+                    <div class="header_contacts d-flex">
                         <div class="phone-number ml-auto">
                             <i class="fas fa-phone"></i>
                             <span>+38 (057) 755-88-88</span>
@@ -56,17 +54,16 @@
 
                     <div class="header_nav">
                         <img src="img/header-nav-border.png" alt="">
-                        <nav class="header_nav-menu d-flex align-items-center justify-content-between">
-                            <a href="#" class="active">Главная</a>
-                            <a href="#">Продукция</a>
-                            <a href="#">О нас</a>
-                            <a href="#">Новости</a>
-                            <a href="#">Оплата/доставка</a>
-                            <a href="#">Сотрудничество</a>
-                        </nav>
+                        <ul class="header_nav-menu d-flex align-items-center justify-content-between" id="menu">
+                            <li><a href="#" class="active">Главная</a></li>
+                            <li><a href="#">Продукция</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Оплата/доставка</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                        </ul>
                     </div>
                     <!-- /header-nav -->
-
                 </div>
             </div>
         </div>
@@ -108,10 +105,8 @@
                         <div class="about-us_title">Любите побаловать себя и своих близких какой-нибудь вкусняшкой?</div>
 
                         <ul class="about-us_list">
-                            <li>Мы готовы делать для Вас яркие, оригинальные изделия из теста: торты, капкейки, макаруны, печенье
-                                и многое другое.</li>
-                            <li>Только индивидуальный подход к каждому заказчику, только исключительные вкусы, только качественное
-                                сырье!
+                            <li>Мы готовы делать для Вас яркие, оригинальные изделия из теста: торты, капкейки, макаруны, печенье и многое другое.</li>
+                            <li>Только индивидуальный подход к каждому заказчику, только исключительные вкусы, только качественное сырье!
                             </li>
                             <li>Мы дорожим своим именем, и качество нашей продукции всегда на высшем уровне.</li>
                             <li>Наше призвание делать жизнь вкуснее, наш конек - делать десертыэксклюзивными, запоминающимися и вкусными!</li>
@@ -136,7 +131,7 @@
                         <div class="advantage-block_img"><img src="img/quality-img.jpg" alt=""></div>
                         <div class="advantage-block_text">
                             <div class="advantage-block_title">Качество</div>
-                            <p>Вся продукция изготавливается строго на основании ГОСТов,  без заменителей сахара, лауриновых жиров, и вредных Е-компонентов</p>
+                            <p>Вся продукция изготавливается строго на основании ГОСТов, без заменителей сахара, лауриновых жиров, и вредных Е-компонентов</p>
                         </div>
                     </div>
                 </div>
@@ -204,7 +199,7 @@
     <!-- /production -->
 
     <section class="wishes">
-        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-around">
             <div class="wishes_text-container">
                 <div class="wishes_title">У вас есть особые пожелания?</div>
                 <div class="wishes_text">Отправте нам заявку и мы с Вами обо всем договоримся!</div>
@@ -229,7 +224,7 @@
             </nav>
             <!-- /footer-nav-->
 
-            <div class="footer-contacts d-flex justify-content-center">
+            <div class="footer-contacts d-flex justify-content-center flex-wrap">
                 <div class="footer-contacts_element"><img src="img/footer-tel.png" alt=""><span>+38 (057) 755-88-88</span></div>
                 <div class="footer-contacts_element"><img src="img/footer-adress.png" alt=""><span>г. Полтава, ул. Голосова, 16а</span></div>
                 <div class="footer-contacts_element"><img src="img/footer-mail.png" alt=""><span>info@sweets.com</span></div>
@@ -239,7 +234,17 @@
         <div class="footer-wrapper position-absolute"></div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <script>
+        $(function(){
+            $('#menu').slicknav({
+                label: '',
+                appendTo: $('.contacts-and-menu')
+            });
+        });
+    </script>
 </body>
 
 </html>
